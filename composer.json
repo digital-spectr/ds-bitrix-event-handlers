@@ -1,0 +1,22 @@
+{
+  "name": "digital-spectr/ds-bitrix-event-handlers",
+  "description": "Event Handlers",
+  "license": "MIT",
+  "keywords": [
+    "helpers",
+    "bitrix",
+    "Битрикс"
+  ],
+  "authors": [
+    {
+      "name": "DigitalSpectr",
+      "email": "man@digital-spectr.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "config": {
+    "vendor-dir": "local/php_interface/"
+  }
+}
