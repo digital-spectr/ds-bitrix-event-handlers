@@ -5,7 +5,8 @@
   "keywords": [
     "helpers",
     "bitrix",
-    "Битрикс"
+    "Битрикс",
+    "event handlers"
   ],
   "authors": [
     {
@@ -14,9 +15,13 @@
     }
   ],
   "require": {
-    "php": ">=5.5.0"
+    "php": ">=5.5.0",
+    "composer/installers": "~1.0"
   },
-  "config": {
-    "vendor-dir": "local/php_interface/"
+  "extra":{
+    "installer-paths":{
+      "local/php_interface/ds_bitrix_event_handlers": ["digital-spectr/ds-bitrix-event-handlers"]
+    }
   }
+
 }
