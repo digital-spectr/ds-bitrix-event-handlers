@@ -8,7 +8,7 @@
     "Битрикс",
     "event handlers"
   ],
-  "type": "bitrix-d7-module",
+  "type": "library",
   "authors": [
     {
       "name": "DigitalSpectr",
