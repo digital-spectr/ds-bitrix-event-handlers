@@ -21,7 +21,7 @@
   },
   "extra":{
     "installer-paths":{
-      "local/php_interface/ds_bitrix_event_handlers": ["digital-spectr/ds-bitrix-event-handlers"]
+      "local/php_interface": ["digital-spectr/ds-bitrix-event-handlers"]
     }
   }
 
