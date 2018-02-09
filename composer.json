@@ -8,6 +8,9 @@
     "Битрикс",
     "event handlers"
   ],
+  "config": {
+    "vendor-dir": "protected/extensions"
+  },
   "type": "library",
   "authors": [
     {
@@ -21,7 +24,7 @@
   },
   "extra":{
     "installer-paths":{
-      "local/php_interface/{$name}": []
+      "local/php_interface/{$name}": ["digital-spectr/ds-bitrix-event-handlers"]
     }
   }
 
