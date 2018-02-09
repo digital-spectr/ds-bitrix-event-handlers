@@ -8,6 +8,8 @@
 AddEventHandler('main', 'OnBeforeEventSend', 'main_OnBeforeEventSend_ChangeTrackingNumberFields');
 function main_OnBeforeEventSend_ChangeTrackingNumberFields(&$arFields, &$arTemplate)
 {
+    Bitrix\Main\Diag\Debug::writeToFile("main_OnBeforeEventSend_ChangeTrackingNumberFields", "", "main_OnBeforeEventSend_ChangeTrackingNumberFields.txt");
+
     if ((int)$arFields['ORDER_ID'] && (string)$arFields['ORDER_TRACKING_NUMBER'] !== '') {
         Bitrix\Main\Loader::includeModule('sale');
         $arOrder = CSaleOrder::GetByID($arFields['ORDER_ID']);
