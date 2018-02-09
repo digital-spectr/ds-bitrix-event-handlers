@@ -8,9 +8,6 @@
     "Битрикс",
     "event handlers"
   ],
-  "config": {
-    "vendor-dir": "protected/extensions"
-  },
   "type": "library",
   "authors": [
     {
@@ -20,11 +17,11 @@
   ],
   "require": {
     "php": ">=5.5.0",
-    "composer/installers": "~1.0"
+    "mnsami/composer-custom-directory-installer": "1.1.*"
   },
   "extra":{
     "installer-paths":{
-      "local/php_interface/{$name}": ["digital-spectr/ds-bitrix-event-handlers"]
+      "local/php_interface/": ["digital-spectr/ds-bitrix-event-handlers"]
     }
   }
 
