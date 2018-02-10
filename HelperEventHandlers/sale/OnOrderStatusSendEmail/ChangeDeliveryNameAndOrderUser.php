@@ -1,13 +1,5 @@
 <?
 /**
- * Created by PhpStorm.
- * User: GSU
- * Date: 06.02.2018
- * Time: 0:39
- */
-
-
-/**
  * при отправке письма о смене статуса заказа
  *
  * изменение сведений о доставке и пользователе
@@ -15,8 +7,6 @@
 AddEventHandler("sale", "OnOrderStatusSendEmail", "sale_OnOrderStatusSendEmail_ChangeDeliveryNameAndOrderUser");
 function sale_OnOrderStatusSendEmail_ChangeDeliveryNameAndOrderUser($ID, &$eventName, &$arFields, $val)
 {
-    Bitrix\Main\Diag\Debug::writeToFile("sale_OnOrderStatusSendEmail_ChangeDeliveryNameAndOrderUser", "",
-        "sale_OnOrderStatusSendEmail_ChangeDeliveryNameAndOrderUser.txt");
 
     CModule::IncludeModule("sale");
     $arOrder = CSaleOrder::GetByID($ID);
