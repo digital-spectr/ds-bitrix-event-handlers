@@ -28,7 +28,7 @@ sale_OnOrderStatusSendEmail_ChangeDeliveryNameAndOrderUser
 Пример: /HelperEventHandlers/iblock/OnBeforeIBlockAdd/FixIBlockPermissions.php
 
 Название обработчика формируется по следующей схеме:
-[модуль]._.[событие]._.[название, которое можно было бы дать обработчику при классическом расположении, т.е. в init.php или handlers.php]
+[модуль]\_[событие]\_[название, которое можно было бы дать обработчику при классическом расположении, т.е. в init.php или handlers.php]
 
 Посмотреть список доступных обработчиков можно при помощи метода 
 `EventHandlersLoader::getEventHandlersInfo();`
